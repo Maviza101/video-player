@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { DEFAULT_VIDEO_ID } from '../values/constants';
+import { DEFAULT_TITLE_OF_VIDEO, DEFAULT_VIDEO_ID } from '../values/constants';
 
 @Component({
   selector: 'app-home-page',
@@ -9,6 +9,7 @@ import { DEFAULT_VIDEO_ID } from '../values/constants';
   styleUrls: ['./home-page.component.styl']
 })
 export class HomePageComponent implements OnInit {
+  titleOfVideo = DEFAULT_TITLE_OF_VIDEO;
   videoId = DEFAULT_VIDEO_ID;
 
   constructor(

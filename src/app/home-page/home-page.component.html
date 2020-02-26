@@ -1,4 +1,6 @@
 <div class="home-page-container">
-    <p>home-page works!</p>
-    <p>Video id is: {{ videoId }}</p>
+    <app-video-player
+        [videoId]="videoId"
+        [titleOfVideo]="titleOfVideo"
+    ></app-video-player>
 </div>
